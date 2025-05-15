@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simple Calculator">
+        <meta name="author" content="Saalim Ibn Issah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <link rel="icon" href="img/logo.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <h1 id="aaa">SIMPLE CALCULATOR</h1>
+        <div class="workspace">
+            <div class="display">
+                <input type="text" class="space" id="space" placeholder="0" oninput="restrict(this, '=')" disabled/>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="disp(7)"><strong>7</strong></button>
+                <button type="button" onclick="disp(8)"><strong>8</strong></button>
+                <button type="button" onclick="disp(9)"><strong>9</strong></button>
+                <button type="button" onclick="disp(4)"><strong>4</strong></button>
+                <button type="button" onclick="disp(5)"><strong>5</strong></button>
+                <button type="button" onclick="disp(6)"><strong>6</strong></button>
+                <button type="button" onclick="disp(1)"><strong>1</strong></button>
+                <button type="button" onclick="disp(2)"><strong>2</strong></button>
+                <button type="button" onclick="disp(3)"><strong>3</strong></button>
+                <button type="button" onclick="disp(0)"><strong>0</strong></button>
+                <button type="button" class="decimal" onclick="disp('.')"><strong>&bull;</strong></button>
+                <button type="button" class="equal" onclick="solve()"><strong>&equals;</strong></button>
+                <button type="button" id="operate" onclick="disp('+')"><strong>&plus;</strong></button>
+                <button type="button" id="operate" onclick="disp('-')"><strong>&minus;</strong></button>
+                <button type="button" id="operate" onclick="disp('*')"><strong>&times;</strong></button>
+                <button type="button" id="operate" onclick="disp('/')"><strong>&divide;</strong></button>
+                <button type="button" class="clear" onclick="del()"><strong>DEL</strong></button>
+                <button type="button" class="all-clear" onclick="clean()"><strong>AC</strong></button>
+            </div>
+        </div>
+        <div class="able">
+            <button type="button" id="enable" onclick="able()">Enable keyboard input</button>
+        </div>
+    </body>
+</html>
